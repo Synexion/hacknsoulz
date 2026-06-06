@@ -1,0 +1,128 @@
+# Objectif : Devenir développeur employable en 12 mois
+
+*Début du projet : 02/06/2026*
+
+## Bienvenue
+
+Bienvenue sur ce repository.
+
+Ce dépôt documente mon parcours d'apprentissage et de progression vers un objectif clair : devenir employable en tant que développeur web dans les 12 prochains mois.
+
+Après une formation Développeur Web & Web Mobile (Bac+2), plusieurs projets personnels et de nombreuses candidatures restées sans succès, j'ai décidé de reprendre mon apprentissage de manière plus structurée et plus proche des attentes du marché actuel.
+
+Plutôt que d'accumuler des cours ou des tutoriels, j'ai choisi d'apprendre en construisant un projet concret autour d'une de mes plus grandes passions : les Hack'n Slash et plus particulièrement Diablo 4.
+
+# Le projet
+
+L'objectif final est de développer une plateforme communautaire dédiée à Diablo 4 et aux Hack'n Slash en général.
+
+Le projet évoluera progressivement au fur et à mesure de mon apprentissage.
+
+À terme, la plateforme pourra proposer :
+
+* Des guides
+* Des builds de personnages
+* Des profils utilisateurs
+* Des commentaires
+* Des systèmes de notation
+* Des outils de theorycraft
+* Des ressources communautaires
+
+Le but n'est pas uniquement de créer un site.
+
+Le but est de construire un véritable projet permettant d'apprendre et d'utiliser les technologies modernes du développement web.
+
+# Objectifs
+
+À travers ce projet, je souhaite :
+
+* Consolider mes bases en JavaScript moderne
+* Apprendre à utiliser Git et GitHub dans un contexte professionnel
+* Maîtriser React
+* Comprendre et créer des API REST
+* Développer un backend avec Node.js
+* Utiliser PostgreSQL pour la gestion des données
+* Construire une application web complète de bout en bout
+
+---
+
+# Contraintes
+
+Je travaille actuellement à temps plein.
+
+Je peux consacrer environ 1 à 2 heures par jour à cet apprentissage.
+
+L'objectif n'est donc pas d'aller vite, mais d'être régulier et discipliné sur une période d'un an.
+
+# Roadmap
+
+## Étape 1 — JavaScript Moderne
+
+* Objets
+* Tableaux
+* Fonctions modernes
+* ES6+
+* JSON
+* Async / Await
+
+## Étape 2 — Git & GitHub
+
+* Gestion de versions
+* Travail collaboratif
+* Bonnes pratiques professionnelles
+
+## Étape 3 — React
+
+* Composants
+* Props
+* State
+* Hooks
+* Communication avec une API
+
+## Étape 4 — API REST
+
+* GET
+* POST
+* PUT
+* DELETE
+* Architecture REST
+
+## Étape 5 — Node.js
+
+* Express
+* Routes
+* Middleware
+* Architecture backend
+
+## Étape 6 — PostgreSQL
+
+* Modélisation de données
+* Relations
+* Requêtes SQL
+* Optimisation basique
+
+## Étape 7 — Développement du projet final
+
+Création d'une plateforme communautaire complète utilisant :
+
+* React
+* Node.js
+* PostgreSQL
+* API REST
+* Git / GitHub
+
+# Pourquoi ce repository ?
+
+Pour documenter ma progression.
+
+Pour conserver une trace de mon apprentissage.
+
+Pour démontrer ma capacité à apprendre de nouvelles technologies.
+
+Pour trouver une alternance dans le cadre d'une poursuite d'études en licence, puis en master, ou obtenir un premier emploi dans le développement web.
+
+Et surtout pour transformer une passion en un projet concret.
+
+# Rendez-vous dans 12 mois.
+
+Objectif : regarder ce premier commit avec le sourire.
