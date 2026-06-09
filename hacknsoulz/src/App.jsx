@@ -1,12 +1,26 @@
 import { useState, useEffect } from 'react';
+import { BrowserRouter, Routes, Route, Link} from 'react-router-dom';
+import Accueil from'./pages/Accueil';
+import Builds from'./pages/Builds';
 
 
 // 
 function App() {
   return (
     <div>
-      <h1>HacknSoulz</h1>
-      <PersonnageNom nom="Synexion" classe="Sacresprit"></PersonnageNom>
+      <BrowserRouter>
+        <nav>
+          <Link to="/accueil">Accueil</Link>
+          <Link to="/builds">Builds</Link>
+        </nav>
+
+        <Routes>
+          <Route path="/accueil" element={<Accueil />} />
+          <Route path="/builds" element={<Builds />} />
+        </Routes>
+      </BrowserRouter>
+      {/* <h1>HacknSoulz</h1> */}
+      {/* <PersonnageNom nom="Synexion" classe="Sacresprit"></PersonnageNom>
       <PersonnageNom nom="Ellana" classe="Voleuse"></PersonnageNom>
       <Compteur></Compteur>
       <Item nom="Eldruin" type="épée" puissance="900"/>
@@ -18,7 +32,7 @@ function App() {
       <ListeUtilisateur></ListeUtilisateur>
       <ListePosts></ListePosts>
       <ListeCommentaires></ListeCommentaires>
-      <ListeTodos></ListeTodos>
+      <ListeTodos></ListeTodos> */}
     </div>
   );
   
