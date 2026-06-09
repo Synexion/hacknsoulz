@@ -18,6 +18,7 @@ function App() {
       <ListeUtilisateur></ListeUtilisateur>
       <ListePosts></ListePosts>
       <ListeCommentaires></ListeCommentaires>
+      <ListeTodos></ListeTodos>
     </div>
   );
   
@@ -64,8 +65,6 @@ function StatJoueur({label, valeur}) {
     </div>
   );
 }
-
-export default App
 
 // useEffect : introduction
 
@@ -151,8 +150,41 @@ function ListeCommentaires() {
   return(
     <ul>
       {commentaires.filter(com => com.postId === 1).map(com => (
-        <li key={com.postId}>{com.name} - {com.email}</li>
+        <li key={com.id}>{com.name} - {com.email}</li>
       ))}
     </ul>
   )
 }
+
+// Exercice en autonomie 2
+
+function ListeTodos() {
+  const [listTodo, setListTodo ] = useState([]);
+
+  useEffect(()=> {
+    const recupTodo = async () => {
+      try {
+        const reponse = await fetch("https://jsonplaceholder.typicode.com/todos");
+        const data = await reponse.json();
+        console.log(data);
+        setListTodo(data);
+      } catch(erreur) {
+        console.log("Voici l'erreur :", erreur);
+      }
+    }
+    recupTodo();
+  }, []);
+
+  return(
+    <div>
+      <p> Taches en attente : {listTodo.filter(todo => !todo.completed).length}</p>
+      <ul>
+        {listTodo.filter(todo => !todo.completed).map(todo => (
+          <li key={todo.id}>tache en attente : {todo.title}</li>
+        ))}
+      </ul>
+    </div>
+  )
+}
+
+export default App
