@@ -10,38 +10,40 @@ import Communaute from './pages/Communaute';
 function App() {
   return (
     <div style={{backgroundImage: "url('/body.png')"}} className='bg-cover bg-center min-h-screen'>
-      <BrowserRouter>
-        <nav className='bg-transparent flex justify-center gap-6 px-8 py-4 text-white'>
-          <Link className='text-gray-300 hover:text-white' to="/">Accueil</Link>
-          <Link className='text-gray-300 hover:text-white' to="/builds">Builds</Link>
-          <Link className='text-gray-300 hover:text-white' to="/guides">Guides</Link>
-          <Link className='text-gray-300 hover:text-white' to="/communaute">Communauté</Link>
-        </nav>
+      <div className='bg-black/40 min-h-screen'>
+        <BrowserRouter>
+          <nav className='bg-transparent flex justify-center gap-6 px-8 py-4 text-white'>
+            <Link className='text-gray-300 hover:text-white' to="/">Accueil</Link>
+            <Link className='text-gray-300 hover:text-white' to="/builds">Builds</Link>
+            <Link className='text-gray-300 hover:text-white' to="/guides">Guides</Link>
+            <Link className='text-gray-300 hover:text-white' to="/communaute">Communauté</Link>
+          </nav>
 
-        <Routes>
-          <Route path="/" element={<Accueil />} />
-          <Route path="/builds" element={<Builds />} />
-          <Route path="/guides" element={<Guides />} />
-          <Route path="/communaute" element={<Communaute />} />
-        </Routes>
-      </BrowserRouter>
+          <Routes>
+            <Route path="/" element={<Accueil />} />
+            <Route path="/builds" element={<Builds />} />
+            <Route path="/guides" element={<Guides />} />
+            <Route path="/communaute" element={<Communaute />} />
+          </Routes>
+        </BrowserRouter>
 
-      {/* Exercice d'entrainement */}
+        {/* Exercice d'entrainement */}
 
-      {/* <h1>HacknSoulz</h1> */}
-      {/* <PersonnageNom nom="Synexion" classe="Sacresprit"></PersonnageNom>
-      <PersonnageNom nom="Ellana" classe="Voleuse"></PersonnageNom>
-      <Compteur></Compteur>
-      <Item nom="Eldruin" type="épée" puissance="900"/>
-      <Item nom="Bouclier d'os" type="main gauche" puissance="700"></Item>
-      <Item nom="Amulette en bronze" type="bijoux" puissance="250"></Item>
-      <StatJoueur label="Vie" valeur="5000"></StatJoueur>
-      <StatJoueur label="Armure" valeur="17400"></StatJoueur>
-      <StatJoueur label="Dégâts" valeur="3500"></StatJoueur>
-      <ListeUtilisateur></ListeUtilisateur>
-      <ListePosts></ListePosts>
-      <ListeCommentaires></ListeCommentaires>
-      <ListeTodos></ListeTodos> */}
+        {/* <h1>HacknSoulz</h1> */}
+        {/* <PersonnageNom nom="Synexion" classe="Sacresprit"></PersonnageNom>
+        <PersonnageNom nom="Ellana" classe="Voleuse"></PersonnageNom>
+        <Compteur></Compteur>
+        <Item nom="Eldruin" type="épée" puissance="900"/>
+        <Item nom="Bouclier d'os" type="main gauche" puissance="700"></Item>
+        <Item nom="Amulette en bronze" type="bijoux" puissance="250"></Item>
+        <StatJoueur label="Vie" valeur="5000"></StatJoueur>
+        <StatJoueur label="Armure" valeur="17400"></StatJoueur>
+        <StatJoueur label="Dégâts" valeur="3500"></StatJoueur>
+        <ListeUtilisateur></ListeUtilisateur>
+        <ListePosts></ListePosts>
+        <ListeCommentaires></ListeCommentaires>
+        <ListeTodos></ListeTodos> */}
+      </div>
     </div>
   );
   
