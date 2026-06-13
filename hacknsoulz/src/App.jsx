@@ -9,13 +9,13 @@ import Communaute from './pages/Communaute';
 // 
 function App() {
   return (
-    <div className='navBar'>
+    <div style={{backgroundImage: "url('/body.png')"}} className='bg-cover bg-center min-h-screen'>
       <BrowserRouter>
-        <nav>
-          <Link to="/">Accueil</Link>
-          <Link to="/builds">Builds</Link>
-          <Link to="/guides">Guides</Link>
-          <Link to="/communaute">Communauté</Link>
+        <nav className='bg-transparent flex justify-center gap-6 px-8 py-4 text-white'>
+          <Link className='text-gray-300 hover:text-white' to="/">Accueil</Link>
+          <Link className='text-gray-300 hover:text-white' to="/builds">Builds</Link>
+          <Link className='text-gray-300 hover:text-white' to="/guides">Guides</Link>
+          <Link className='text-gray-300 hover:text-white' to="/communaute">Communauté</Link>
         </nav>
 
         <Routes>
@@ -25,6 +25,9 @@ function App() {
           <Route path="/communaute" element={<Communaute />} />
         </Routes>
       </BrowserRouter>
+
+      {/* Exercice d'entrainement */}
+
       {/* <h1>HacknSoulz</h1> */}
       {/* <PersonnageNom nom="Synexion" classe="Sacresprit"></PersonnageNom>
       <PersonnageNom nom="Ellana" classe="Voleuse"></PersonnageNom>

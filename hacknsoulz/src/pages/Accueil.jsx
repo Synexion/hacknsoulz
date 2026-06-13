@@ -1,10 +1,13 @@
+// Import
+
+import Hero from "../components/hero";
+
 function Accueil() {
-  return (
+  return(
     <div>
-      <h1>Bienvenue sur HacknSoulz</h1>
-      <p>La plateforme communautaire Diablo IV</p>
+      <Hero />
     </div>
-  );
+  )
 }
 
 export default Accueil;
